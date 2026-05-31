@@ -1,0 +1,50 @@
+.caro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  gap: 20px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.caro .img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.caro img {
+  box-shadow: 0 0 30px rgba(70, 68, 68, 0.17);
+  width: 100%;
+  object-fit:scale-down;
+  display: block;
+}
+
+/* Text overlay styling */
+.caro .img-container div {
+  position: absolute;
+  bottom: 200px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  display: block;
+}
+
+
+
+.caro .img-container div p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-shadow: 0 0 10px white;
+}
+
+/* Responsive behavior */
+@media (max-width: 1440px) {
+  .caro {
+    flex-direction: column;
+  }
+}
